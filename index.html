@@ -31,13 +31,21 @@
         .logo { height: 200px; margin-right: 20px; margin-left: -20px; margin-bottom: -128px; }
         .subtitle {padding-left: 180px;}
         .link-title {margin: 80px auto 20px auto; text-align: center}
+
+        .recipe table { width: 100%; border-collapse: collapse; margin-bottom: 20px; background-color: #f8f4e5; border-radius: 8px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+        .recipe th, .recipe td { padding: 12px; text-align: left; border-bottom: 2px solid #d4a76a; }
+        .recipe th { background: linear-gradient(to bottom, #d4a76a, #a87332); color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+        .recipe tr:nth-child(even) { background-color: #f3e3c3; }
+        .recipe tr:hover { background-color: #e0c385; transition: 0.3s; }
+        .recipe td:first-child { font-weight: bold; }
+
     </style>
 </head>
 <body>
     <div class="content">
         <div class="header">
             <h1><img class="logo" src="logo.png" />Kelterer des Wahren Mets</h1>
-            <h2 class="subtitle">Met Herstellung, Geschichten und Musik</h2>
+            <h2 class="subtitle">Met-Herstellung, Geschichten und Musik</h2>
         </div>
     
         <div class="links">
@@ -45,11 +53,134 @@
             <a href="https://music.apple.com/de/album/goldene-liebe/1743050769?l=en-GB"><div><span>Apple Music</span></div> <img src="goldene-liebe.png" alt="Apple Music"></a>
             <a href="https://www.youtube.com/watch?v=uiKtfaNjRsM&list=PLCSVYNJko-Sg6HcTXgz6Ph0gB0N7vLhSA&index=1"><div><span>Youtube</span></div> <img src="goldene-liebe.png" alt="Youtube"></a>
         </div>
+        
         <div class="band">
             <div class="band-info">
                 <img class="band-photo" src="band-photo.png" alt="Band Bild">
                 <div class="text">
                     <p>Wir sind eine mittelalterliche Folk-Rock-Band* mit Sitz in Lübeck. Unsere Leidenschaft für Met, vom Trinken bis zum Herstellen, wollen wir nun auch auf Musik erweitern. Unser erstes Album, "Goldene Liebe", ist ein Zeugnis unserer Hingabe an das Handwerk der Honig-Kelterei. Wir verstehen uns als *virtuelle Band und freuen uns die Welt mit Met zu erheitern.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stories recipe" id="recipe">
+            <div class="story" id="met-rezept">
+                <img class="story-photo" src="met-rezept.png" alt="Met Rezept">
+                <div class="text">
+                   <table>
+                        <tr>
+                            <th>Blase</th>
+                            <th>30L</th>
+                            <th>25L</th>
+                            <th>5L</th>
+                        </tr>
+                        <tr>
+                            <th>Gärstart</th>
+                            <td>Saft: 500ml</td>
+                            <td>Hefe: 1 pkg</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Ansatz</th>
+                            <th>30L</th>
+                            <th>25L</th>
+                            <th>5L</th>
+                        </tr>
+                        <tr>
+                            <td>Honig</td>
+                            <td>4.5 kg</td>
+                            <td>4.0 kg</td>
+                            <td>1.0 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Saft</td>
+                            <td>8.0L</td>
+                            <td>7.0L</td>
+                            <td>1.5L</td>
+                        </tr>
+                        <tr>
+                            <td>Pulp</td>
+                            <td>0.5 kg</td>
+                            <td>0.5 kg</td>
+                            <td>0.1 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Wasser</td>
+                            <td>8.0L</td>
+                            <td>7.0L</td>
+                            <td>1.5L</td>
+                        </tr>
+                        <tr>
+                            <td>Nährsalz</td>
+                            <td>5g - 10g</td>
+                            <td>5g - 10g</td>
+                            <td>1 - 2g</td>
+                        </tr>
+                        <tr>
+                            <td>Säure</td>
+                            <td colspan="3">nach Geschmack (ca. 3g pro Liter)</td>
+                        </tr>
+                        <tr>
+                            <th>Nachfüttern</th>
+                            <td>2000g - [3500g] - 5000g</td>
+                            <td>2300g - [3200g] - 4700g</td>
+                            <td>500g - [800g] - 1500g</td>
+                        </tr>
+                    </table>
+                
+                    <h3>Vorbereitung</h3>
+                    <p>
+                        Bevor mit dem Metbrauen begonnen werden kann, sollten Honigsorte, Fruchtsorte und Hefe sorgfältig ausgewählt werden.
+                        Für einen süßen Met empfiehlt sich eine Dessertwein-Hefe wie Port- oder Sherry-Hefe. Achtung: Die Hefe hat einen großen Einfluss 
+                        auf den späteren Alkoholgehalt. Die Wahl der Honigsorte beeinflusst den Geschmack maßgeblich. Sehr intensiver Honig kann teilweise 
+                        mit Zucker gestreckt werden, um den Geschmack auszugleichen. Es wird empfohlen, immer Fruchtsaft sowie Fruchtpulp in den Met zu geben. 
+                        Dies sorgt für eine angenehme Säure, fördert das Wachstum der Hefe und trägt zur Selbstklärung des Mets bei.
+                    </p>
+                
+                    <h3>Gärstart</h3>
+                    <p>
+                        Der Gärstart sollte 2–5 Tage vor dem Ansetzen des Mets aus Hefe und Saft vorbereitet werden. Dies kann entweder in einem 
+                        flexiblen Behälter (z. B. Tetrapack oder Plastikflasche), der zusammengedrückt wird, oder in einer Glasflasche erfolgen, 
+                        die man beispielsweise mit Watte gegen das Eindringen von Fremdhefen schützt. Je kürzer die Zeit, desto sorgfältiger sollte 
+                        auf eine ideale Temperatur geachtet werden. Die Hefe darf keinesfalls zu warm werden (z. B. auf einem Heizkörper stehend), 
+                        da sie sonst absterben kann.
+                    </p>
+                
+                    <h3>Ansetzen</h3>
+                    <p>
+                        Wenn sich der flexible Behälter von selbst aufbläht und/oder ein deutlicher Gärungsgeruch wahrnehmbar ist, ist der Gärstarter bereit. 
+                        Wichtig: Sollte der Gärstarter unangenehm riechen, kann es sein, dass Fremdhefen statt der gewünschten Hefe im Starter aktiv sind. 
+                        In diesem Fall sollte man von vorne beginnen. <br>
+                        Nun alle Zutaten in die Weinblase füllen und durch Schwenken gut vermischen. Den Pulp kann man mit einer Reibe oder einem Pürierstab 
+                        aus ganzen Früchten herstellen. Dabei sollte darauf geachtet werden, (Apfel-)Kerne vorher zu entfernen.
+                    </p>
+                
+                    <h3>Pflegen</h3>
+                    <p>
+                        Der junge Met muss gepflegt werden, wobei vor allem drei Aspekte wichtig sind: Luftschutz, Schwenken und Temperatur.
+                        <ul>
+                            <li><strong>Luftschutz:</strong> Ein Gärröhrchen ist notwendig, damit das bei der Gärung entstehende CO₂ entweichen kann, ohne dass Luft eindringt.</li>
+                            <li><strong>Schwenken:</strong> Der Met sollte täglich geschwenkt werden, bis sich der am Boden abgesetzte Honig vollständig aufgelöst hat.</li>
+                            <li><strong>Temperatur:</strong> Die Hefe benötigt einen bestimmten Temperaturbereich (z. B. 18 °C – 25 °C bei Sherry-Hefe).</li>
+                        </ul>
+                    </p>
+                
+                    <h3>Nachfüttern</h3>
+                    <p>
+                        Das Gärröhrchen dient als Indikator für die Gärung: In den ersten Tagen sollte die Blubberfrequenz langsam ansteigen, bevor sie später wieder abnimmt. 
+                        Dies zeigt an, dass entweder der freie Zucker umgewandelt ist oder der Alkoholgehalt für die Hefe zu hoch geworden ist. Schmeckt der Met trocken, kann nach 
+                        Gefühl Zucker hinzugefügt werden. Beim ersten Nachfüttern empfiehlt es sich, nur wenig Zucker (orientiert an der unteren Schranke der Zutatenliste) zuzugeben. 
+                        Gärt der Met nicht mehr und schmeckt noch süß, ist es Zeit für die Abfüllung.
+                    </p>
+                
+                    <h3>Abfüllen</h3>
+                    <p>
+                        Sobald die Gärung sicher gestoppt ist, kann der Met abgefüllt werden. Dabei sind zwei Dinge zu beachten: <strong>Nachgärung</strong> und <strong>Klärung</strong>.
+                        Eine Nachgärung kann Metflaschen explodieren lassen. Dies lässt sich durch Schwefelzugabe verhindern, was jedoch den Geschmack beeinflusst. 
+                        Alternativ kann der Met länger in der Weinblase verbleiben, solange keine Luft eindringt. 
+                        Für die Klärung kann der Met zunächst in Plastikkanister umgefüllt werden, wo sich Hefe und Trübstoffe absetzen. Anschließend kann der klare Met vorsichtig in Flaschen 
+                        abgefüllt werden.
+                    </p>
                 </div>
             </div>
         </div>
